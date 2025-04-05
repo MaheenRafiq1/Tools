@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online Tools - 25+ Image & PDF Tools</title>
+    <meta name="description" content="Free online tools for image and PDF processing. Compress, convert, edit and secure your files with AI.">
+    <meta name="keywords" content="PDF tools, image compressor, PDF converter, OCR, document processing">
+    <meta property="og:title" content="I Love PDF AI - Complete Document Processing">
+    <meta property="og:description" content="25+ free tools for image and PDF processing powered by AI">
+    <meta property="og:image" content="/preview.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary: #6c63ff;
+            --secondary: #4d44db;
+            --accent: #ff6584;
+            --light: #f8f9fa;
+            --dark: #2d3748;
+            --card-radius: 20px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f9f0ff 100%);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6c63ff, #4d44db);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(to right, #6c63ff, #4d44db);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-size: 16px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6c63ff, #4d44db);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(108, 99, 255, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(108, 99, 255, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+            background: linear-gradient(to right, #4d44db, #6c63ff, #ff6584);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--dark);
+            opacity: 0.8;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .search-bar {
+            display: flex;
+            background: white;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 18px 25px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 18px 30px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-bar button:hover {
+            background: #ff4d6d;
+        }
+
+        /* Tools Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* Tool Card */
+        .tool-card {
+            background: white;
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-header {
+            padding: 25px;
+            position: relative;
+            color: white;
+        }
+
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 24px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .tool-card:hover .tool-icon {
+            transform: scale(1.1);
+        }
+
+        .tool-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .tool-description {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .tool-preview {
+            height: 180px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tool-actions {
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tool-link {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Preview Elements */
+        .preview-rectangle {
+            width: 80%;
+            height: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 8px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .preview-rectangle::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Individual Tool Styles */
+        /* PDF Merger - Red Theme */
+        .tool-pdf-merger .tool-header {
+            background: linear-gradient(135deg, #ef4444, #f87171);
+        }
+        .tool-pdf-merger .tool-icon {
+            background: #dc2626;
+        }
+        .tool-pdf-merger .tool-link {
+            background: #dc2626;
+        }
+        .tool-pdf-merger .tool-preview {
+            background: #fee2e2;
+        }
+
+        /* PDF Splitter - Blue Theme */
+        .tool-pdf-splitter .tool-header {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+        }
+        .tool-pdf-splitter .tool-icon {
+            background: #2563eb;
+        }
+        .tool-pdf-splitter .tool-link {
+            background: #2563eb;
+        }
+        .tool-pdf-splitter .tool-preview {
+            background: #dbeafe;
+        }
+
+        /* AI PDF Summarizer - Purple Theme */
+        .tool-ai-summarizer .tool-header {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        }
+        .tool-ai-summarizer .tool-icon {
+            background: #7c3aed;
+        }
+        .tool-ai-summarizer .tool-link {
+            background: #7c3aed;
+        }
+        .tool-ai-summarizer .tool-preview {
+            background: #ede9fe;
+        }
+
+        /* PDF to Word - Green Theme */
+        .tool-pdf-to-word .tool-header {
+            background: linear-gradient(135deg, #10b981, #34d399);
+        }
+        .tool-pdf-to-word .tool-icon {
+            background: #059669;
+        }
+        .tool-pdf-to-word .tool-link {
+            background: #059669;
+        }
+        .tool-pdf-to-word .tool-preview {
+            background: #d1fae5;
+        }
+
+        /* Word to PDF - Blue Theme */
+        .tool-word-to-pdf .tool-header {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+        }
+        .tool-word-to-pdf .tool-icon {
+            background: #2563eb;
+        }
+        .tool-word-to-pdf .tool-link {
+            background: #2563eb;
+        }
+        .tool-word-to-pdf .tool-preview {
+            background: #dbeafe;
+        }
+
+        /* PDF Compressor - Orange Theme */
+        .tool-pdf-compressor .tool-header {
+            background: linear-gradient(135deg, #f97316, #fb923c);
+        }
+        .tool-pdf-compressor .tool-icon {
+            background: #ea580c;
+        }
+        .tool-pdf-compressor .tool-link {
+            background: #ea580c;
+        }
+        .tool-pdf-compressor .tool-preview {
+            background: #ffedd5;
+        }
+
+        /* JPG to PDF - Pink Theme */
+        .tool-jpg-to-pdf .tool-header {
+            background: linear-gradient(135deg, #ec4899, #f472b6);
+        }
+        .tool-jpg-to-pdf .tool-icon {
+            background: #db2777;
+        }
+        .tool-jpg-to-pdf .tool-link {
+            background: #db2777;
+        }
+        .tool-jpg-to-pdf .tool-preview {
+            background: #fce7f3;
+        }
+
+        /* PDF to JPG - Purple Theme */
+        .tool-pdf-to-jpg .tool-header {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        }
+        .tool-pdf-to-jpg .tool-icon {
+            background: #7c3aed;
+        }
+        .tool-pdf-to-jpg .tool-link {
+            background: #7c3aed;
+        }
+        .tool-pdf-to-jpg .tool-preview {
+            background: #ede9fe;
+        }
+
+        /* PDF to PPT - Red Theme */
+        .tool-pdf-to-ppt .tool-header {
+            background: linear-gradient(135deg, #ef4444, #f87171);
+        }
+        .tool-pdf-to-ppt .tool-icon {
+            background: #dc2626;
+        }
+        .tool-pdf-to-ppt .tool-link {
+            background: #dc2626;
+        }
+        .tool-pdf-to-ppt .tool-preview {
+            background: #fee2e2;
+        }
+
+        /* PPT to PDF - Orange Theme */
+        .tool-ppt-to-pdf .tool-header {
+            background: linear-gradient(135deg, #f97316, #fb923c);
+        }
+        .tool-ppt-to-pdf .tool-icon {
+            background: #ea580c;
+        }
+        .tool-ppt-to-pdf .tool-link {
+            background: #ea580c;
+        }
+        .tool-ppt-to-pdf .tool-preview {
+            background: #ffedd5;
+        }
+
+        /* PDF to Excel - Green Theme */
+        .tool-pdf-to-excel .tool-header {
+            background: linear-gradient(135deg, #10b981, #34d399);
+        }
+        .tool-pdf-to-excel .tool-icon {
+            background: #059669;
+        }
+        .tool-pdf-to-excel .tool-link {
+            background: #059669;
+        }
+        .tool-pdf-to-excel .tool-preview {
+            background: #d1fae5;
+        }
+
+        /* Excel to PDF - Blue Theme */
+        .tool-excel-to-pdf .tool-header {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+        }
+        .tool-excel-to-pdf .tool-icon {
+            background: #2563eb;
+        }
+        .tool-excel-to-pdf .tool-link {
+            background: #2563eb;
+        }
+        .tool-excel-to-pdf .tool-preview {
+            background: #dbeafe;
+        }
+
+        /* PDF to Text - Gray Theme */
+        .tool-pdf-to-text .tool-header {
+            background: linear-gradient(135deg, #6b7280, #9ca3af);
+        }
+        .tool-pdf-to-text .tool-icon {
+            background: #4b5563;
+        }
+        .tool-pdf-to-text .tool-link {
+            background: #4b5563;
+        }
+        .tool-pdf-to-text .tool-preview {
+            background: #f3f4f6;
+        }
+
+        /* Text to PDF - Indigo Theme */
+        .tool-text-to-pdf .tool-header {
+            background: linear-gradient(135deg, #6366f1, #818cf8);
+        }
+        .tool-text-to-pdf .tool-icon {
+            background: #4f46e5;
+        }
+        .tool-text-to-pdf .tool-link {
+            background: #4f46e5;
+        }
+        .tool-text-to-pdf .tool-preview {
+            background: #e0e7ff;
+        }
+
+        /* PDF Unlocker - Yellow Theme */
+        .tool-pdf-unlocker .tool-header {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+        }
+        .tool-pdf-unlocker .tool-icon {
+            background: #d97706;
+        }
+        .tool-pdf-unlocker .tool-link {
+            background: #d97706;
+        }
+        .tool-pdf-unlocker .tool-preview {
+            background: #fef3c7;
+        }
+
+        /* PDF Rotate - Teal Theme */
+        .tool-pdf-rotate .tool-header {
+            background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+        }
+        .tool-pdf-rotate .tool-icon {
+            background: #0d9488;
+        }
+        .tool-pdf-rotate .tool-link {
+            background: #0d9488;
+        }
+        .tool-pdf-rotate .tool-preview {
+            background: #ccfbf1;
+        }
+
+        /* PDF Watermark - Cyan Theme */
+        .tool-pdf-watermark .tool-header {
+            background: linear-gradient(135deg, #06b6d4, #22d3ee);
+        }
+        .tool-pdf-watermark .tool-icon {
+            background: #0891b2;
+        }
+        .tool-pdf-watermark .tool-link {
+            background: #0891b2;
+        }
+        .tool-pdf-watermark .tool-preview {
+            background: #cffafe;
+        }
+
+        /* PDF OCR - Purple Theme */
+        .tool-pdf-ocr .tool-header {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        }
+        .tool-pdf-ocr .tool-icon {
+            background: #7c3aed;
+        }
+        .tool-pdf-ocr .tool-link {
+            background: #7c3aed;
+        }
+        .tool-pdf-ocr .tool-preview {
+            background: #ede9fe;
+        }
+
+        /* Image Compressor - Blue Theme */
+        .tool-image-compressor .tool-header {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+        }
+        .tool-image-compressor .tool-icon {
+            background: #2563eb;
+        }
+        .tool-image-compressor .tool-link {
+            background: #2563eb;
+        }
+        .tool-image-compressor .tool-preview {
+            background: #dbeafe;
+        }
+
+        /* Image Resizer - Pink Theme */
+        .tool-image-resizer .tool-header {
+            background: linear-gradient(135deg, #ec4899, #f472b6);
+        }
+        .tool-image-resizer .tool-icon {
+            background: #db2777;
+        }
+        .tool-image-resizer .tool-link {
+            background: #db2777;
+        }
+        .tool-image-resizer .tool-preview {
+            background: #fce7f3;
+        }
+
+        /* Image Converter - Green Theme */
+        .tool-image-converter .tool-header {
+            background: linear-gradient(135deg, #10b981, #34d399);
+        }
+        .tool-image-converter .tool-icon {
+            background: #059669;
+        }
+        .tool-image-converter .tool-link {
+            background: #059669;
+        }
+        .tool-image-converter .tool-preview {
+            background: #d1fae5;
+        }
+
+        /* Background Remover - Purple Theme */
+        .tool-bg-remover .tool-header {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        }
+        .tool-bg-remover .tool-icon {
+            background: #7c3aed;
+        }
+        .tool-bg-remover .tool-link {
+            background: #7c3aed;
+        }
+        .tool-bg-remover .tool-preview {
+            background: #ede9fe;
+        }
+
+        /* Image Editor - Orange Theme */
+        .tool-image-editor .tool-header {
+            background: linear-gradient(135deg, #f97316, #fb923c);
+        }
+        .tool-image-editor .tool-icon {
+            background: #ea580c;
+        }
+        .tool-image-editor .tool-link {
+            background: #ea580c;
+        }
+        .tool-image-editor .tool-preview {
+            background: #ffedd5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                border-radius: 15px;
+            }
+
+            .search-bar input,
+            .search-bar button {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .search-bar button {
+                border-radius: 0 0 15px 15px;
+            }
+        }
+
+        /* AdSense Styles */
+        .ad-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: var(--card-radius);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">AI</div>
+                <div class="logo-text">I Love PDF AI</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#tools">Tools</a></li>
+                    <li><a href="online-tool.html">Online Tool</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>AI-Powered PDF & Image Tools</h1>
+                <p>Process, convert, compress and secure your documents with our 25+ free online tools</p>
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for a tool (e.g. compress PDF, remove background)...">
+                        <button><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </div>
+                <a href="online-tool.html" class="btn btn-primary">Try Now for Free</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- AdSense Banner -->
+            <div class="ad-container">
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- Tools Grid -->
+            <section id="tools">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; background: linear-gradient(to right, #4d44db, #6c63ff); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                    Our Powerful Tools
+                </h2>
+                <div class="tools-grid">
+                    <!-- PDF Merger -->
+                    <div class="tool-card tool-pdf-merger">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-object-group"></i>
+                            </div>
+                            <h3>PDF Merger</h3>
+                            <p class="tool-description">Combine multiple PDFs into one document</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle"></div>
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Drag & Drop</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF Splitter -->
+                    <div class="tool-card tool-pdf-splitter">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <h3>PDF Splitter</h3>
+                            <p class="tool-description">Extract pages or split by sections</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 50%; margin-left: auto;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Multi-Page</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- AI PDF Summarizer -->
+                    <div class="tool-card tool-ai-summarizer">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI PDF Summarizer</h3>
+                            <p class="tool-description">Extract key points from long documents</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                            <div class="preview-rectangle" style="width: 40%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>AI Powered</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF to Word -->
+                    <div class="tool-card tool-pdf-to-word">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-word"></i>
+                            </div>
+                            <h3>PDF to Word</h3>
+                            <p class="tool-description">Convert PDF to editable Word documents</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>High Accuracy</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Word to PDF -->
+                    <div class="tool-card tool-word-to-pdf">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h3>Word to PDF</h3>
+                            <p class="tool-description">Convert Word documents to PDF</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Preserve Formatting</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF Compressor -->
+                    <div class="tool-card tool-pdf-compressor">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                            <h3>PDF Compressor</h3>
+                            <p class="tool-description">Reduce PDF file size without quality loss</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 50%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Adjustable</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- JPG to PDF -->
+                    <div class="tool-card tool-jpg-to-pdf">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-image"></i>
+                            </div>
+                            <h3>JPG to PDF</h3>
+                            <p class="tool-description">Convert images to PDF documents</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Multiple Images</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF to JPG -->
+                    <div class="tool-card tool-pdf-to-jpg">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h3>PDF to JPG</h3>
+                            <p class="tool-description">Extract images from PDF files</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>High Resolution</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF to PPT -->
+                    <div class="tool-card tool-pdf-to-ppt">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <h3>PDF to PPT</h3>
+                            <p class="tool-description">Convert PDF to editable PowerPoint</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Slide by Slide</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PPT to PDF -->
+                    <div class="tool-card tool-ppt-to-pdf">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h3>PPT to PDF</h3>
+                            <p class="tool-description">Convert PowerPoint to PDF</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Preserve Layout</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF to Excel -->
+                    <div class="tool-card tool-pdf-to-excel">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h3>PDF to Excel</h3>
+                            <p class="tool-description">Extract tables to editable Excel</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Table Detection</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Excel to PDF -->
+                    <div class="tool-card tool-excel-to-pdf">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h3>Excel to PDF</h3>
+                            <p class="tool-description">Convert spreadsheets to PDF</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Multi-Sheet</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF to Text -->
+                    <div class="tool-card tool-pdf-to-text">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>PDF to Text</h3>
+                            <p class="tool-description">Extract text from PDF files</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>OCR Support</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Text to PDF -->
+                    <div class="tool-card tool-text-to-pdf">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h3>Text to PDF</h3>
+                            <p class="tool-description">Convert text files to PDF</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Custom Formatting</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF Unlocker -->
+                    <div class="tool-card tool-pdf-unlocker">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-unlock"></i>
+                            </div>
+                            <h3>PDF Unlocker</h3>
+                            <p class="tool-description">Remove password protection</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Secure</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF Rotate -->
+                    <div class="tool-card tool-pdf-rotate">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-redo"></i>
+                            </div>
+                            <h3>PDF Rotate</h3>
+                            <p class="tool-description">Rotate PDF pages 90° or 180°</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 70%; transform: rotate(90deg);"></div>
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Select Pages</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF Watermark -->
+                    <div class="tool-card tool-pdf-watermark">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-stamp"></i>
+                            </div>
+                            <h3>PDF Watermark</h3>
+                            <p class="tool-description">Add text or image watermarks</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Customizable</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- PDF OCR -->
+                    <div class="tool-card tool-pdf-ocr">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>PDF OCR</h3>
+                            <p class="tool-description">Convert scanned PDFs to text</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Multi-Language</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Compressor -->
+                    <div class="tool-card tool-image-compressor">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                            <h3>Image Compressor</h3>
+                            <p class="tool-description">Reduce image size without quality loss</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 90%;"></div>
+                            <div class="preview-rectangle" style="width: 50%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Multiple Formats</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Resizer -->
+                    <div class="tool-card tool-image-resizer">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                            <h3>Image Resizer</h3>
+                            <p class="tool-description">Resize images to any dimensions</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 70%; height: 20px;"></div>
+                            <div class="preview-rectangle" style="width: 40%; height: 20px;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Precise Control</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Converter -->
+                    <div class="tool-card tool-image-converter">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h3>Image Converter</h3>
+                            <p class="tool-description">Convert between JPG, PNG, WEBP, etc.</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%;"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>Batch Convert</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Background Remover -->
+                    <div class="tool-card tool-bg-remover">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-eraser"></i>
+                            </div>
+                            <h3>Background Remover</h3>
+                            <p class="tool-description">Remove backgrounds automatically</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 70%;"></div>
+                            <div class="preview-rectangle" style="width: 50%; background: rgba(0,0,0,0.05);"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>AI Powered</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Editor -->
+                    <div class="tool-card tool-image-editor">
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h3>Image Editor</h3>
+                            <p class="tool-description">Crop, rotate, adjust and enhance</p>
+                        </div>
+                        <div class="tool-preview">
+                            <div class="preview-rectangle" style="width: 80%;"></div>
+                            <div class="preview-rectangle" style="width: 60%; transform: rotate(5deg);"></div>
+                        </div>
+                        <div class="tool-actions">
+                            <span>All-in-One</span>
+                            <a href="online-tool.html" class="tool-link">Try Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AdSense Banner -->
+            <div class="ad-container">
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- AI Features Section -->
+            <section id="ai-features" style="margin: 80px 0;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; background: linear-gradient(to right, #8b5cf6, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                    AI-Powered Features
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                    <div style="background: white; padding: 30px; border-radius: var(--card-radius); box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: #8b5cf6; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Smart Summarization</h3>
+                        <p style="color: var(--dark); opacity: 0.8;">Our AI extracts key points from long documents instantly.</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: var(--card-radius); box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: #3b82f6; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Table Recognition</h3>
+                        <p style="color: var(--dark); opacity: 0.8;">Accurately detect and extract tables from documents.</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: var(--card-radius); box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: #10b981; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Multi-Language OCR</h3>
+                        <p style="color: var(--dark); opacity: 0.8;">Extract text from scanned documents in 50+ languages.</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: var(--card-radius); box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: #ec4899; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Smart Background Removal</h3>
+                        <p style="color: var(--dark); opacity: 0.8;">Automatically remove backgrounds from images with precision.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="background: var(--dark); color: white; padding: 60px 0 30px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 25px; position: relative; display: inline-block;">I Love PDF AI</h3>
+                    <p style="margin-bottom: 20px;">Your all-in-one solution for document processing powered by AI.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; transition: all 0.3s;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; transition: all 0.3s;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 25px; position: relative; display: inline-block;">Image Tools</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Image Compressor</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Image Resizer</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Image Converter</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Background Remover</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Image Editor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 25px; position: relative; display: inline-block;">PDF Tools</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">PDF Merger</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">PDF Splitter</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">PDF Compressor</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">PDF to Word</a></li>
+                        <li style="margin-bottom: 12px;"><a href="online-tool.html" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">PDF OCR</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 25px; position: relative; display: inline-block;">Legal</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="#" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Privacy Policy</a></li>
+                        <li style="margin-bottom: 12px;"><a href="#" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Terms of Service</a></li>
+                        <li style="margin-bottom: 12px;"><a href="#" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Basic functionality for tool interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark mode toggle
+            const darkModeToggle = document.createElement('button');
+            darkModeToggle.innerHTML = '🌙';
+            darkModeToggle.style.position = 'fixed';
+            darkModeToggle.style.bottom = '20px';
+            darkModeToggle.style.right = '20px';
+            darkModeToggle.style.zIndex = '1000';
+            darkModeToggle.style.width = '50px';
+            darkModeToggle.style.height = '50px';
+            darkModeToggle.style.borderRadius = '50%';
+            darkModeToggle.style.background = 'var(--primary)';
+            darkModeToggle.style.color = 'white';
+            darkModeToggle.style.border = 'none';
+            darkModeToggle.style.cursor = 'pointer';
+            darkModeToggle.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+            
+            darkModeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                darkModeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+                
+                // Add dark mode styles
+                if (document.body.classList.contains('dark-mode')) {
+                    document.body.style.backgroundColor = '#1a202c';
+                    document.body.style.color = '#f7fafc';
+                } else {
+                    document.body.style.backgroundColor = '';
+                    document.body.style.color = '';
+                }
+            });
+            
+            document.body.appendChild(darkModeToggle);
+
+            // File upload functionality for tools
+            const toolPreviews = document.querySelectorAll('.tool-preview');
+            toolPreviews.forEach(preview => {
+                preview.addEventListener('click', function() {
+                    const input = document.createElement('input');
+                    input.type = 'file';
+                    input.accept = preview.parentElement.classList.contains('tool-pdf') ? '.pdf' : 'image/*';
+                    input.click();
+                    
+                    input.addEventListener('change', function(e) {
+                        const file = e.target.files[0];
+                        if (file) {
+                            // Process the file based on tool type
+                            console.log('File selected:', file.name);
+                            // Here you would call the appropriate processing function
+                        }
+                    });
+                });
+            });
+        });
+
+        // Google AdSense initialization
+        window.onload = function() {
+            if (typeof adsbygoogle !== 'undefined') {
+                adsbygoogle.push({});
+            }
+        };
+    </script>
+</body>
+</html>
